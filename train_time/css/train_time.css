@@ -1,0 +1,51 @@
+.context {
+	margin: 20px;
+}
+
+.dowload {
+	width: 160px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+
+.bgp {
+	flex: 0;
+	position: fixed;
+	right: 0;
+	opacity: 0.15;
+	width: 120px;
+	bottom: 65px;
+	margin-right: 25px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 20px;
+	margin: 20px;
+}
+
+.title2 {
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+.go {
+	color: blue;
+}
+
+@media (min-width: 985px) {
+	.footer {
+		position: fixed;
+		bottom: 0;
+	}
+}
+
+
+@media (min-height: 770px) {
+	.footer {
+		position: fixed;
+		bottom: 0;
+	}
+}

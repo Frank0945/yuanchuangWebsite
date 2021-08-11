@@ -1,0 +1,79 @@
+html { 
+	font-family: Microsoft JhengHei;
+}
+
+body {
+	margin: 0;
+	background: #fbfbfbff;
+	padding-top: 70px;
+}
+.box1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.app-bar {
+	background: white;
+	display: flex;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+	padding: 10px 25px;
+	padding-left: 15px;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.app-bar img {
+	width: 50px;
+	height: 50px;
+}
+
+.app-bar-title {
+	font-size: 27px;
+	font-weight: bold;
+	color: gray;
+	margin-left: 10px;
+}
+
+@media (max-width: 500px) {
+	body {
+		padding-top: 50px;
+	}
+	.app-bar {
+		padding-right: 15px;
+	}
+	.app-bar img {
+		width: 30px;
+		height: 30px;
+	}
+	.box1 {
+		font-size: 14px;
+	}
+	.app-bar-title {
+		font-size: 18px;
+	}
+}
+
+.app-bar-btn {
+	margin-left: 25px;
+	color: grey;
+}
+.footer {
+	width: 100%;
+	text-align: center;
+	padding: 15px 0;
+	background: #efefef;
+	margin-top: 66px;
+	font-size: 15px;
+}
+
+a:not(.a) {
+	display: none;
+}
+a {
+	text-decoration: none;
+}

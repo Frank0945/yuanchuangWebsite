@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="Shortcut Icon" type="image/x-icon" href="./images/mark.svg" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/base.css">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+	<title>遠創</title>
+	<meta name="description" content="遠創官方網站" />
+	<meta property="og:image" content="./images/mark.png" />
+</head>
+
+<body>
+	<div class='main'>
+		<div class='app-bar'>
+			<a href="index.html" class="box1 a">
+				<img src="./images/mark.svg" />
+				<div id="app-bar-title" class="app-bar-title">遠創</div>
+			</a>
+			<div class="box1">
+				<a target="_blank" href="https://play.google.com/store/search?q=pub%3A%E9%81%A0%E5%89%B5&c=apps" class="app-bar-btn a">play商店</a>
+				<a href="mailto:yuanchuang940@gmail.com" class="app-bar-btn a">聯絡我們</a>
+			</div>
+		</div>
+		<div id='cover-box'>
+			<div id="cover" class="cover box1">
+				<div class="box3">
+					<div class="box2">
+						<div class="word1">創</div><div class="word2">意</div>
+					</div>
+					<div class="word3">Creativity</div>
+				</div>
+
+				<div class="phone">
+					<div class="box4">
+						<div class="camera-box"><div class="camera"></div><div class="light"></div></div>
+						<div class="word2 phone-word">不甘於世俗</div>
+						<div class="word3 phone-word">unwilling to be ordinary</div>
+					</div>
+					<img src="./images/mark.svg" />
+				</div>
+			</div>
+		</div>
+		<div id="Apps" class="content">
+
+			<div class="block">
+				<video src="./videos/app1.mp4" autoplay="" playsinline="" muted="" loop=""></video>
+				<div class="box6">
+					<div class="box5">
+						<img class='block-icon' src="./images/app1.png" />
+						<div class="block-title">遠創新聞</div>
+					</div>
+					<img class='line1' src="./images/line1.svg" />
+					<div class="block-content">
+						多方新聞來源，便捷的操作介面
+						<br/>
+						讓您輕鬆知曉每日大小事
+					</div>
+					<div class="left-btn">
+						<a target="_blank"  href="https://play.google.com/store/apps/details?id=com.yuanchuang_news" class="a playStore-btn"><img  src="./images/playStore.png"/></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<video src="./videos/app2.mp4" autoplay="" playsinline="" muted="" loop=""></video>
+				<div class="box6">
+					<div class="box5">
+						<img class='block-icon' src="./images/app2.png" />
+						<div class="block-title">Story Viewer</div>
+					</div>
+					<img class='line1' src="./images/line1.svg" />
+					<div class="block-content">
+						突破界線，提供快速瀏覽限時動態的介面
+						<br/>
+						帶給您優質的操作及檢視模式
+					</div>
+					<div class="left-btn">
+						<a href="./story_viewer/index.html" class="a userTerms-btn">使用者條款</a>
+						<a target="_blank" href="https://play.google.com/store/apps/details?id=com.story_viewer" class="a playStore-btn"><img  src="./images/playStore.png"/></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="block">
+				<video src="./videos/app3.mp4" autoplay="" playsinline="" muted="" loop=""></video>
+				<div class="box6">
+					<div class="box5">
+						<img class='block-icon' src="./images/app3.png" />
+						<div class="block-title">Air How</div>
+					</div>
+					<img class='line1' src="./images/line1.svg" />
+					<div class="block-content">
+						乾淨整潔，人性化的操作模式
+						<br/>
+						為您帶來最清晰的空氣資訊！
+					</div>
+					<div class="left-btn">
+						<a target="_blank" href="https://play.google.com/store/apps/details?id=com.air_how" class="a playStore-btn"><img  src="./images/playStore.png"/></a>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="block">
+				<video src="./videos/app4.mp4" autoplay="" playsinline="" muted="" loop=""></video>
+				<div class="box6">
+					<div class="box5">
+						<img class='block-icon' src="./images/app4.png" />
+						<div class="block-title">台鐵一點通</div>
+					</div>
+					<img class='line1' src="./images/line1.svg" />
+					<div class="block-content">
+						一指點下，輕鬆查詢火車時刻
+						<br/>
+						介面乾淨，即刻上手
+					</div>
+					<div class="left-btn">
+						<a href="./train_time/index.html" class="a userTerms-btn">使用者條款</a>
+						<a target="_blank" href="https://play.google.com/store/apps/details?id=com.train_time" class="a playStore-btn"><img  src="./images/playStore.png"/></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer">遠創 Yuanchuang © 2021</div>
+		</div>
+
+		<Script>
+			let cover_width = 555;
+			let max_scale = 2;
+			let max_width = 1100;
+			let max_height = 82;
+
+			fitSize();
+
+			window.onresize = () => fitSize();
+
+			function fitSize() {
+				let nowWidth = document.documentElement.clientWidth;
+				if (nowWidth < max_width) {
+
+					let zoom = nowWidth / cover_width;
+					document.getElementById('cover').style.transform =`scale(${zoom})`;
+
+
+					let coverHeight  = document.getElementById('cover').clientHeight * zoom;
+					document.getElementById('cover-box').style.height =`${coverHeight}px`;
+
+
+				} else if (nowWidth >= max_width) {
+					document.getElementById('cover').style.transform = `scale(${max_scale})`;
+
+					let coverHeight  = document.getElementById('cover').clientHeight * max_scale;
+					document.getElementById('cover-box').style.height =`${coverHeight}px`;
+				}
+
+			}
+		</script>
+
+	</body>
+
+	</html>
